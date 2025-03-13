@@ -1,0 +1,28 @@
+<!-- filepath: my-laravel-app/my-laravel-app/resources/lang/en.json -->
+{
+    "login": {
+        "title": "Login",
+        "email": "Email Address",
+        "password": "Password",
+        "remember_me": "Remember Me",
+        "submit": "Login",
+        "failed": "These credentials do not match our records."
+    },
+    "register": {
+        "title": "Register",
+        "name": "Name",
+        "email": "Email Address",
+        "password": "Password",
+        "confirm_password": "Confirm Password",
+        "submit": "Register",
+        "success": "Registration successful! You can now log in."
+    },
+    "logout": {
+        "success": "You have been logged out successfully."
+    },
+    "validation": {
+        "required": "The :attribute field is required.",
+        "email": "The :attribute must be a valid email address.",
+        "confirmed": "The :attribute confirmation does not match."
+    }
+}

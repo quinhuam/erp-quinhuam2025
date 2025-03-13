@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Contracts\Console\Kernel as ConsoleKernel;
+use Illuminate\Contracts\Debug\ExceptionHandler;
+
+// Load the application
+$app = new Application(
+    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
+);
+
+// Bind important interfaces
+$app->singleton(
+    Kernel::class,
+    App\Http\Kernel::class
+);
+
+$app->singleton(
+    ConsoleKernel::class,
+    App\Console\Kernel::class
+);
+
+$app->singleton(
+    ExceptionHandler::class,
+    App\Exceptions\Handler::class
+);
+
+// Return the application instance
+return $app;

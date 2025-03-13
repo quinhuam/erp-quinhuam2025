@@ -1,0 +1,22 @@
+{
+  "name": "my-laravel-app",
+  "version": "1.0.0",
+  "description": "A Laravel application with a login system and user management.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run watch",
+    "watch": "mix watch",
+    "build": "npm run production",
+    "production": "mix --production"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "laravel-mix": "^6.0.6",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.6"
+  },
+  "license": "MIT"
+}
